@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        *{
+           margin:20px;
+        }
+        body,html{
+            height:100vh;
+        }
+        #blacktoCenter{
+            width:200px;
+            height: 200px;
+           background: lawngreen !important;
+        }
+        #jackGame{
+            display:grid;
+           
+            justify-content: center;
+            /* grid-auto-rows: minmax(100px,200px); */
+            align-content: center;
+        }
+        button{
+            border:none;
+            padding:10px;
+            width:150px;
+            color:black;
+            background: cadetblue;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div id="blacktoCentre">
+        
+        <div id="jackGame">
+            <div id="message"><strong>BLACK JACK GAME</strong></div>
+            <div id="selectedcard">
+                CARDS: 0 
+            </div>
+            <div id="total">
+                TOTAL: 0
+            </div>
+            <button id="selectCard" onclick="card()">NEWCARD</button>
+            <button id="start" onclick="start()">START</button>
+        </div>
+
+    </div>
+    
+    <script src="blackjack.js"></script>
+
+</body>
+</html>
